@@ -1,7 +1,7 @@
 I'm building a custom keyboard including my own layout and pcb.
 
 Components:
-Mx Zilent Frankenswitches or Durock Koala or Zealpc Zilent v2<br/>
+gazzew boba u4 silent tactile switches<br/>
 PBT XDA Keycaps (DIY dye-sublimation printing)<br/>
 STM32F072CBT6 Mikrocontroller<br/>
 Layout:<br/>
