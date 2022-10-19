@@ -1,8 +1,41 @@
-I'm building a custom keyboard including my own layout and pcb.
+# MX_Alps_Hybrid
+KiCad Libraries of keyboard switch footprints
 
-Components:
-gazzew boba u4 silent tactile switches<br/>
-PBT XDA Keycaps (DIY dye-sublimation printing)<br/>
-STM32F072CBT6 Mikrocontroller<br/>
-Layout:<br/>
-http://www.keyboard-layout-editor.com/##@_pcb:false%3B&@_y:1&a:6%3B&=Esc&_a:4%3B&=!%0A1&=%2F@%0A2&=%23%0A3&=$%0A4&=%25%0A5&=%5E%0A6&=%2F&%0A7&=*%0A8&=(%0A9&=)%0A0&=%3F%0A%2F%2F&=+%0A%2F=&_a:6%3B&=DEL&_w:2%3B&=Backspace%3B&@_a:4&w:1.5%3B&=Tab&=Q%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%2F@&=W&=E%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%E2%82%AC&=R&=T&=Z&=U&=I&=O&=P&=%C3%9C&=%7B%0A%5B&=%7D%0A%5D&_w:1.5%3B&=%7C%0A%5C%3B&@_w:1.75%3B&=Caps%20Lock&=A&=S%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%C3%9F&=D&=F&=G&=H&=J&=K&=L&=%C3%96&=%C3%84&=%22%0A'&_a:6&w:2.25%3B&=Enter%3B&@_w:2.25%3B&=Shift&_a:4%3B&=Y&=X&=C&=V&=B&=N&=M&=%2F%3B%0A,&=%2F:%0A.&=%2F_%0A-&_a:6&w:1.75%3B&=Shift&_a:7%3B&=%E2%86%91&_a:6%3B&=F5%3B&@_w:1.25%3B&=Ctrl&_w:1.25%3B&=Win&_w:1.25%3B&=Alt&_a:7&w:6.25%3B&=&_a:6%3B&=Alt%20Gr&_a:4%3B&=%3C%0AVol%20-&=%3E%0AVol%20+&_a:7%3B&=%E2%86%90&=%E2%86%93&=%E2%86%92
+![Footprint Image](https://raw.githubusercontent.com/ai03-2725/MX_Alps_Hybrid.pretty/master/Screenshots/Footprint.png)  
+
+### Included Libraries
+* **MX_Alps_Hybrid.pretty** - The original MX/Alps hybrid support footprints.  
+	* FLIPPED - Reversed LED pads for overlapping switch footprints.
+	* NoLED - No LED pads.
+	* ReversedStabilizers - Stabilizer mirrored vertically (i.e. for bottom row).
+* **MX_Only.pretty** - Only for Cherry MX and derivative clones.  
+	* FLIPPED - Reversed LED pads for overlapping switch footprints.
+	* NoLED - No LED pads.
+	* ReversedStabilizers - Stabilizer mirrored vertically (i.e. for bottom row).
+	* Hotswap - Kailh hotswap sockets of both LED and non-LED variants.
+* **ALPS_Only.pretty** - Only for alps SKCM/SKCL, SKBM/SKBL, and clones with same pin structure.  
+	* LED - Specifically for Alps SKCL with in-switch indicators.
+* **Kailh_Choc.pretty** - Only for Kailh Choc switches.  
+
+### Features
+ * Designed from scratch using official datasheets and accurate measurements
+ * Various footprints for all occasions
+ * Almost every switch size in existence
+ * Topside soldermask to prevent solder overflow and improve appearance
+
+### Upgrading
+The library was overhauled on June 1st, 2019 due to its aging structure and contents.
+* The schematic components were updated to work on the 50mil grid. You can replace the components; however, it will take a decent amount of work.
+	* If you wish to do this, remove the old schematic library, re-add the new one, and replace the schematic components.
+* The footprint library was divided into four distinct libraries. Remove the previous, re-add the libraries with the footprints you are using, then rebind the footprints in the schematic.  
+
+### Request More Footprints
+I'll be more than happy to make more custom footprints to fit your needs, time permitting. I will admit that I'm definitely short on time nowadays, so I may not be able to respond right away.  
+
+
+### Contributing
+Feel free to create pull requests with more footprints. I only ask that they are of high quality, and that they are based on official dimensions, if possible.
+
+![Schematic Image](https://raw.githubusercontent.com/ai03-2725/MX_Alps_Hybrid.pretty/master/Screenshots/Schematic.png) 
+![Top render Image](https://raw.githubusercontent.com/ai03-2725/MX_Alps_Hybrid.pretty/master/Screenshots/Render-Topside.png)  
+![Bottom render Image](https://raw.githubusercontent.com/ai03-2725/MX_Alps_Hybrid.pretty/master/Screenshots/Render-Bottomside.png)  
