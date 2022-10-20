@@ -1,5 +1,13 @@
 I'm building a custom keyboard including my own layout and pcb.</br>
 </br>
+Dedicated Keycaps:
+Sound louder
+Sound quieter
+Sound off
+Audio "play/pause" or "run" a program
+Audio "stop" or "cancel" an execution
+Audio "record"
+</br>
 Components: gazzew boba u4 silent tactile switches</br>
 PBT XDA Keycaps (DIY dye-sublimation printing)</br>
 STM32F072CBT6 Mikrocontroller</br>
